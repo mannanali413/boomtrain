@@ -1,0 +1,42 @@
+@import "../common";
+$page-header-ht: 48px;
+
+.page {
+    position: fixed;
+    top: 50px;
+    left:0; right:0; bottom:0;
+
+
+    &_header {
+        position: absolute; z-index: 3;
+        top:0; left:0; right:0;
+        height: $page-header-ht; background: #009ec5;
+        padding: 0 24px;
+
+        &_title {
+            font-size: 20px; line-height: 48px;
+            color: #fff; font-weight: $medium;
+        }
+    }
+
+    &_content {
+        position:absolute; z-index: 1;
+        top: $page-header-ht; left: 0; right: 0; bottom: 0;
+        overflow-y: scroll;
+    }
+
+    &_footer {
+        position: absolute; z-index: 2;
+        left:0; right:0; bottom:0;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+export const GET_REPOS = 'get list of all repos starting from since'
+export const SUBMIT_REPO_EDIT = 'post edit of a repo'
+export const SET_REPO_EDIT = 'select a repo for edit'
+export const CLEAR_REPO_EDIT = 'set selected_repo object to blank'
+export const OPEN_REPOS_MODAL = 'display modal after repo is selected to edit'
+export const CLOSE_REPOS_MODAL = 'close modal'

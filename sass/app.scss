@@ -1,0 +1,86 @@
+@import "common";
+
+@import "reset";
+
+// #### COLORS ####
+@each $name, $color in $colors {
+    .color-#{$name} {
+        color: $color;
+    }
+}
+
+// #### TEXT SIZES ####
+@each $key, $value in $text-sizes {
+    .text-#{$key} {
+        font-size: map-get($value, font-size);
+        line-height: map-get($value, line-height);
+    }
+}
+
+// #### TITLE SIZES ####
+@each $key, $value in $title-sizes {
+    .title-#{$key} {
+        font-size: map-get($value, font-size);
+        line-height: map-get($value, line-height);
+    }
+}
+
+// #### FONTS ####
+.light       { font-weight: $light !important; }
+.normal      { font-weight: $normal !important; }
+.medium      { font-weight: $medium !important; }
+.bold        { font-weight: $bold !important; }
+.ultra-bold  { font-weight: $ultra-bold !important; }
+
+.font-base   { font-family: $font-family-base !important; }
+.font-roboto { font-family: $font-family-roboto !important; }
+
+// #### BASE ####
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: $font-family-base;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: color(base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: normal;
+    margin: 0;  // No margin by default. We'll use utility classes for setting these
+}
+
+a {
+    text-decoration: none;
+    color: color(blue);
+}
+
+input, select, textarea{
+    font-family: $font-family-base;
+}
+
+hr {
+    border-color: color(border);
+}
+
+.hr {
+    display: block; height: 1px; background: color(border);
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+// #### COMPONENTS ####
+@import "components/page";
+@import "components/tabularList";
+@import "components/modal";
+@import "components/input";

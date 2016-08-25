@@ -1,0 +1,17 @@
+@import "../common";
+
+.tabularList {
+    width: 100%;
+
+    &_subText {
+        font-size: 12px; line-height: 16px;
+        color: #9B9B9B;
+    }
+
+    &_clickableRow {
+        &:hover {
+            cursor: pointer;
+            background: #FAFAFA;
+        }
+    }
+}

@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900);
+.header {
+  display: block;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  background: rgba(244, 244, 244, 0.95); }
+  .header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .header_logo {
+    display: block;
+    width: 146px;
+    height: inherit;
+    float: left;
+    margin-right: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/logo_boomtrain_blue.png"); }
+  .header_links {
+    height: inherit;
+    margin-left: 90px;
+    margin-right: 150px;
+    float: right; }
+    .header_links ul {
+      display: block;
+      list-style: none; }
+      .header_links ul li {
+        float: left; }
+        .header_links ul li a {
+          display: block;
+          height: 50px;
+          padding: 0 16px;
+          font-size: 15px;
+          line-height: 50px;
+          color: #000000 !important;
+          text-transform: uppercase; }
+          .header_links ul li a.active, .header_links ul li a:hover {
+            text-decoration: underline; }
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: center;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.color-base {
+  color: #4a4a4a; }
+
+.color-baseLight {
+  color: #9b9b9b; }
+
+.color-border {
+  color: #e0e0e0; }
+
+.color-blue {
+  color: #55bbea; }
+
+.color-green {
+  color: #4CAF79; }
+
+.color-orange {
+  color: #fba617; }
+
+.color-red {
+  color: #EB5055; }
+
+.color-black {
+  color: #000; }
+
+.text-flush {
+  font-size: 10px;
+  line-height: 14px; }
+
+.text-xSmall {
+  font-size: 12px;
+  line-height: 16px; }
+
+.text-small {
+  font-size: 14px;
+  line-height: 18px; }
+
+.text-medium {
+  font-size: 16px;
+  line-height: 20px; }
+
+.text-large {
+  font-size: 18px;
+  line-height: 24px; }
+
+.text-xLarge {
+  font-size: 20px;
+  line-height: 26px; }
+
+.title-flush {
+  font-size: 22px;
+  line-height: 28px; }
+
+.title-xSmall {
+  font-size: 24px;
+  line-height: 32px; }
+
+.title-small {
+  font-size: 28px;
+  line-height: 36px; }
+
+.title-medium {
+  font-size: 30px;
+  line-height: 40px; }
+
+.title-large {
+  font-size: 32px;
+  line-height: 42px; }
+
+.title-xLarge {
+  font-size: 36px;
+  line-height: 46px; }
+
+.light {
+  font-weight: 300 !important; }
+
+.normal {
+  font-weight: 400 !important; }
+
+.medium {
+  font-weight: 500 !important; }
+
+.bold {
+  font-weight: 600 !important; }
+
+.ultra-bold {
+  font-weight: 700 !important; }
+
+.font-base {
+  font-family: "Roboto", sans-serif !important; }
+
+.font-roboto {
+  font-family: "Roboto", sans-serif !important; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #4a4a4a; }
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: normal;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #55bbea; }
+
+input, select, textarea {
+  font-family: "Roboto", sans-serif; }
+
+hr {
+  border-color: #e0e0e0; }
+
+.hr {
+  display: block;
+  height: 1px;
+  background: #e0e0e0; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mr-20 {
+  margin-right: 20px; }
+
+.page {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .page_header {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background: #009ec5;
+    padding: 0 24px; }
+    .page_header_title {
+      font-size: 20px;
+      line-height: 48px;
+      color: #fff;
+      font-weight: 500; }
+  .page_content {
+    position: absolute;
+    z-index: 1;
+    top: 48px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll; }
+  .page_footer {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .page a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; }
+    .page a:hover {
+      text-decoration: underline; }
+
+.tabularList {
+  width: 100%; }
+  .tabularList_subText {
+    font-size: 12px;
+    line-height: 16px;
+    color: #9B9B9B; }
+  .tabularList_clickableRow:hover {
+    cursor: pointer;
+    background: #FAFAFA; }
+
+.modal_header {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 500;
+  padding: 20px;
+  border-bottom: 1px solid #EDEDED; }
+
+.modal_content {
+  position: absolute;
+  padding: 0 68px;
+  top: 65px;
+  bottom: 68px;
+  right: 0;
+  overflow-y: auto;
+  left: 0;
+  margin: 16px 0; }
+
+.modal_footer {
+  padding: 16px 48px;
+  background: #F8F8F8;
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
+  .modal_footer_msg {
+    font-size: 12px;
+    line-height: 36px; }
+    .modal_footer_msg-error {
+      color: #EB5055; }
+    .modal_footer_msg-success {
+      color: #4CAF79; }
+
+.modal_editRepoInfo {
+  width: 600px;
+  height: 500px;
+  margin-left: -300px;
+  margin-top: -250px; }
+
+.modal_dialog {
+  width: 600px;
+  height: 200px;
+  margin-left: -300px;
+  margin-top: -210px; }
+
+.input_label {
+  font-size: 14px;
+  line-height: 40px;
+  color: #4A4A4A;
+  font-weight: 500;
+  min-width: 150px;
+  text-align: right;
+  display: inline-block; }
+
+.input_input {
+  font-size: 14px;
+  line-height: 34px;
+  width: 250px;
+  border: 1px solid #D2D2D2;
+  border-radius: 3px;
+  padding: 0 10px;
+  outline: none; }
+  .input_input:focus {
+    outline: none; }
+  .input_input.is-error {
+    border: 1px solid #EB5055; }
+  .input_input.disabled {
+    opacity: 0.5; }
+
+.input_textarea {
+  font-size: 14px;
+  line-height: 16px;
+  width: 250px;
+  height: 100px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #D2D2D2;
+  outline: none;
+  resize: none; }
+  .input_textarea:focus {
+    outline: none; }
+  .input_textarea.is-error {
+    border: 1px solid #EB5055; }
+.reposList_row:hover {
+  cursor: pointer;
+  background: #FAFAFA; }
+
+.reposList_row .owner_info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  padding: 2px; }
+
+.reposList_row .table_column {
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4a4a4a;
+  vertical-align: middle; }
+
+.table_header {
+  display: block;
+  background: rgba(244, 244, 244, 0.95); }
+  .table_header .table_column {
+    padding: 20px 10px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #e0e0e0; }
+
+.table_column {
+  display: inline-block; }
+  .table_column-repo_id {
+    width: 5%; }
+  .table_column-repo_name {
+    width: 25%; }
+  .table_column-owner {
+    width: 20%; }
+  .table_column-owner_type {
+    width: 10%; }
+  .table_column-description {
+    width: 36%; }
+  .table_column-icon_col {
+    width: 3%; }
+
+/*# sourceMappingURL=app.css.map*/

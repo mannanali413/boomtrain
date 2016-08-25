@@ -1,0 +1,51 @@
+@import "common";
+
+$header-ht: 50px;
+
+.header {
+    display: block; height: $header-ht;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding:0 20px;
+    background: rgba(244,244,244,0.95);
+    @include clearfix;
+
+    &_logo {
+        display: block;
+        width: 146px; height: inherit;
+        float: left; margin-right: 48px;
+        background-position: center;
+        background-repeat: no-repeat;
+       background-image: url("../images/logo_boomtrain_blue.png");
+    }
+
+    &_links {
+        height: inherit;
+        margin-left: 90px;
+        margin-right: 150px;
+        float: right;
+
+        ul {
+            display: block;
+            list-style: none;
+
+            li {
+                float: left;
+
+                a {
+                    display: block;
+                    height: $header-ht;
+                    padding: 0 16px;
+                    font-size: 15px;
+                    line-height: 50px;
+                    color: #000000 !important;
+                    text-transform: uppercase;
+
+                    &.active, &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

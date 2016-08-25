@@ -1,0 +1,56 @@
+@import "common";
+
+// sass here
+.modal {
+    &_header {
+        font-size: 18px;
+        line-height: 24px;
+        color: #000;
+        font-weight: 500;
+        padding: 20px;
+        border-bottom: 1px solid #EDEDED;
+    }
+
+    &_content {
+        position: absolute;
+        padding: 0 68px;
+        top: 65px;
+        bottom: 68px;
+        right: 0;
+        overflow-y: auto;
+        left: 0;
+        margin: 16px 0;
+    }
+
+    &_footer {
+        padding: 16px 48px;
+        background: #F8F8F8;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+
+        &_msg {
+            font-size: 12px; line-height: 36px;
+
+            &-error {
+                color: color(red);
+            }
+
+            &-success {
+                color: color(green);
+            }
+        }
+    }
+
+    &_editRepoInfo {
+        width: 600px; height: 500px;
+        margin-left: -300px; margin-top: -250px;
+    }
+
+    &_dialog {
+        width: 600px;
+        height: 200px;
+        margin-left: -300px;
+        margin-top: -210px;
+    }
+}

@@ -1,0 +1,19 @@
+$colors: (
+    base: #4a4a4a,
+    baseLight: #9b9b9b,
+    border: #e0e0e0,
+    blue: #55bbea,
+    green: #4CAF79,
+    orange: #fba617,
+    red: #EB5055,
+    black: #000,
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
