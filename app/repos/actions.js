@@ -4,7 +4,7 @@ import request from 'superagent'
 import * as constants from './constants';
 
 const getAPI = 'https://api.github.com/repositories'
-const postAPI = 'https://requestb.in/18wzqj51/'
+const postAPI = 'https://requestb.in/zq0spbzq'
 
 export const getRepos = createAction(constants.GET_REPOS, payload => new Promise((resolve, reject) => {
 	request.get(getAPI)

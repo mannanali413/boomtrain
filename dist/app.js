@@ -14412,7 +14412,7 @@ webpackJsonp([0],[
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var getAPI = 'https://api.github.com/repositories';
-	var postAPI = 'https://requestb.in/18wzqj51/';
+	var postAPI = 'https://requestb.in/zq0spbzq';
 	
 	var getRepos = exports.getRepos = (0, _reduxActions.createAction)(constants.GET_REPOS, function (payload) {
 		return new _promise2.default(function (resolve, reject) {
